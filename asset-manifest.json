@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ab-college/static/css/main.47594d12.css",
+    "main.js": "/ab-college/static/js/main.401cfe82.js",
+    "static/js/453.f56b05e3.chunk.js": "/ab-college/static/js/453.f56b05e3.chunk.js",
+    "index.html": "/ab-college/index.html",
+    "main.47594d12.css.map": "/ab-college/static/css/main.47594d12.css.map",
+    "main.401cfe82.js.map": "/ab-college/static/js/main.401cfe82.js.map",
+    "453.f56b05e3.chunk.js.map": "/ab-college/static/js/453.f56b05e3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47594d12.css",
+    "static/js/main.401cfe82.js"
+  ]
+}
