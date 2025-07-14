@@ -26,7 +26,7 @@ const AboutUs = () => {
         {/* Right: Image */}
         <div className="lg:w-1/2 h-64 lg:h-auto">
           <img
-            src="images/college.jpg"
+            src={`${process.env.PUBLIC_URL}/images/college.jpg`}
             alt="Atal Behari College"
             className="w-full h-full object-cover"
           />

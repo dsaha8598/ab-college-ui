@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6">
         {/* Logo Section */}
         <div className="flex-shrink-0">
-          <img src="images/Logo.jpg" alt="College Logo" className="h-24 w-auto mb-2" />
+          <img src={`${process.env.PUBLIC_URL}/images/Logo.jpg`} alt="College Logo" className="h-24 w-auto mb-2" />
           <p className="text-sm">&copy; {new Date().getFullYear()} Atal Bihari College</p>
         </div>
 
