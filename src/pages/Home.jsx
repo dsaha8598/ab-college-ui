@@ -8,27 +8,27 @@ const slides = [
   {
     title: "Welcome to Atal Bihari College",
     text: "Empowering the youth of Basudevpur through quality education and cultural values.",
-    image: "images/college.jpg",
+    image:  `${process.env.PUBLIC_URL}/images/college.jpg`,
   },
   {
     title: "Principal's Message",
     text: "Our mission is to cultivate knowledge, inspire innovation, and nurture values.",
-    image: "images/slide1.jpeg",
+    image: `${process.env.PUBLIC_URL}/images/slide1.jpeg`,
   },
   {
     title: "Upcoming Notice",
     text: "Admissions open for 2025–26 academic year. Apply now and be part of our legacy.",
-    image: "images/slide2.jpg",
+    image:`${process.env.PUBLIC_URL}/images/slide2.jpg`,
   },
   {
     title: "Campus Life",
     text: "Discover our vibrant campus life, student activities, and green learning environment.",
-    image: "images/slide3.jpeg",
+    image: `${process.env.PUBLIC_URL}/images/slide3.jpeg`,
   },
   {
     title: "Principal's Message",
     text: "Our mission is to cultivate knowledge, inspire innovation, and nurture values.",
-    image: "images/slide4.jpg",
+    image: `${process.env.PUBLIC_URL}/images/slide4.jpg`,
   }
 ];
 
