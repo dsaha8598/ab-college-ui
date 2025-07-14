@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.19942ec0.css",
-    "main.js": "/static/js/main.d004148c.js",
-    "static/js/453.97b90a09.chunk.js": "/static/js/453.97b90a09.chunk.js",
-    "index.html": "/index.html",
-    "main.19942ec0.css.map": "/static/css/main.19942ec0.css.map",
-    "main.d004148c.js.map": "/static/js/main.d004148c.js.map",
-    "453.97b90a09.chunk.js.map": "/static/js/453.97b90a09.chunk.js.map"
+    "main.css": "/ab-college-ui/static/css/main.19942ec0.css",
+    "main.js": "/ab-college-ui/static/js/main.5b6f6961.js",
+    "static/js/453.97b90a09.chunk.js": "/ab-college-ui/static/js/453.97b90a09.chunk.js",
+    "index.html": "/ab-college-ui/index.html",
+    "main.19942ec0.css.map": "/ab-college-ui/static/css/main.19942ec0.css.map",
+    "main.5b6f6961.js.map": "/ab-college-ui/static/js/main.5b6f6961.js.map",
+    "453.97b90a09.chunk.js.map": "/ab-college-ui/static/js/453.97b90a09.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19942ec0.css",
-    "static/js/main.d004148c.js"
+    "static/js/main.5b6f6961.js"
   ]
 }
