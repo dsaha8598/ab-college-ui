@@ -6,6 +6,13 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Header from "./Header";
 import Footer from "./Footer";
+import Departments from "./pages/Departments";
+import Courses from "./pages/Courses";
+import Syllabus from "./pages/Syllabus";
+import Results from "./pages/Results";
+import Facilities from "./pages/Facilities";
+import Gallery from "./pages/Gallery";
+import Notices from "./pages/Notices";
 
 function App() {
   return (
@@ -17,7 +24,7 @@ function App() {
 
         {/* Sticky Nav Bar (adjusted for mobile view below header) */}
         <nav className="sticky top-[136px] z-40 w-full bg-white shadow border-b">
-          <ul className="flex justify-start md:justify-center overflow-x-auto whitespace-nowrap px-2 py-3 gap-4 text-sm font-medium scrollbar-hide">
+          <ul className="flex justify-start md:justify-center overflow-x-auto whitespace-nowrap px-2 py-3 gap-4 text-lg font-medium scrollbar-hide">
             {[
               { path: "/", label: "Home" },
               { path: "/about", label: "About" },
@@ -29,6 +36,7 @@ function App() {
               { path: "/facilities", label: "Facilities" },
               { path: "/gallery", label: "Gallery" },
               { path: "/contact", label: "Contact" },
+              
             ].map(({ path, label }) => (
               <li key={path}>
                 <NavLink
@@ -53,13 +61,14 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* Placeholder Routes */}
-            <Route path="/courses" element={<div className="p-4">Courses Page</div>} />
-            <Route path="/departments" element={<div className="p-4">Departments Page</div>} />
-            <Route path="/notices" element={<div className="p-4">Notices Page</div>} />
-            <Route path="/syllabus" element={<div className="p-4">Syllabus Page</div>} />
-            <Route path="/results" element={<div className="p-4">Results Page</div>} />
-            <Route path="/facilities" element={<div className="p-4">Facilities Page</div>} />
-            <Route path="/gallery" element={<div className="p-4">Gallery Page</div>} />
+            <Route path="/departments" element={<Departments />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/syllabus" element={<Syllabus />} />
+            <Route path="/results" element={<Results />} />
+            <Route path="/facilities" element={<Facilities />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/notices" element={<Notices />} />
+
           </Routes>
         </main>
 

@@ -20,18 +20,36 @@ const NoticeBoard = () => {
   const [activeTab, setActiveTab] = useState("notices");
   const items = activeTab === "notices" ? notices : news;
 
-  useEffect(() => {
-    const container = document.getElementById("notice-scroll");
-    let scrollY = 0;
-    const interval = setInterval(() => {
+useEffect(() => {
+  const container = document.getElementById("notice-scroll");
+  let scrollInterval;
+
+  const startAutoScroll = () => {
+    scrollInterval = setInterval(() => {
       if (container) {
-        scrollY += 1;
-        if (scrollY >= container.scrollHeight - container.clientHeight) scrollY = 0;
-        container.scrollTo({ top: scrollY, behavior: "smooth" });
+        if (container.scrollTop + container.clientHeight >= container.scrollHeight) {
+          container.scrollTop = 0;
+        } else {
+          container.scrollTop += 1;
+        }
       }
-    }, 100);
-    return () => clearInterval(interval);
-  }, [activeTab]);
+    }, 60);
+  };
+
+  const stopAutoScroll = () => clearInterval(scrollInterval);
+
+  container?.addEventListener("mouseenter", stopAutoScroll);
+  container?.addEventListener("mouseleave", startAutoScroll);
+
+  startAutoScroll();
+
+  return () => {
+    stopAutoScroll();
+    container?.removeEventListener("mouseenter", stopAutoScroll);
+    container?.removeEventListener("mouseleave", startAutoScroll);
+  };
+}, [activeTab]);
+
 
   return (
     <div className="border rounded-lg shadow-lg bg-white min-h-[320px] h-full overflow-hidden">
