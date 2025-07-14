@@ -59,7 +59,7 @@ const About = () => {
         </p>
         <div className="mt-4 rounded overflow-hidden shadow-lg">
           <img
-            src={`${process.env.PUBLIC_URL}/images/college.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/location.jpg`}
             alt="Map Location"
             className="w-full h-64 object-cover"
           />

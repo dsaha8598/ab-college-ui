@@ -82,7 +82,7 @@ const Home = () => {
   return (
     <div className="w-full">
       {/* Hero Carousel */}
-      <div className="relative w-full h-[calc(100vh-8rem)] mt-[8rem] overflow-hidden">
+      <div className="relative w-full h-[calc(100vh-8rem)] mt-[.5rem] overflow-hidden">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={slide.title}
