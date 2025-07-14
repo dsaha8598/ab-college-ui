@@ -1,6 +1,6 @@
 // App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import {  HashRouter, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -9,7 +9,8 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <Router>
+    <React.StrictMode>
+      <HashRouter>
       <div className="flex flex-col min-h-screen bg-gray-100">
         {/* Sticky Header */}
         <Header />
@@ -64,7 +65,8 @@ function App() {
 
         <Footer />
       </div>
-    </Router>
+      </HashRouter>
+    </React.StrictMode>
   );
 }
 
